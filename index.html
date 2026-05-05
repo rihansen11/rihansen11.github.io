@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rihansen Ulihdo Purba — Frontend Developer & Creative</title>
+  <meta name="description" content="Portfolio of Rihansen Ulihdo Purba — Frontend Developer, UI/UX Enthusiast, and Creative Designer based in Indonesia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" id="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav">
+    <button class="mobile-nav-close"><i class="fa-solid fa-xmark"></i></button>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#field-assignments">Field</a>
+    <a href="#projects">Projects</a>
+    <a href="#design-work">Design</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">R<span>.</span>Purba</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#field-assignments">Field</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#design-work">Design</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contact" class="nav-cta">Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-tag"><span class="dot"></span>Available for Work</div>
+          <h1 class="hero-name">Rihansen<span class="line-2">Purba</span></h1>
+          <div class="hero-role">
+            <span id="typed-role">Frontend Developer</span>
+            <span class="hero-role-badge">&amp; UI/UX</span>
+          </div>
+          <p class="hero-desc">I'm a creative Frontend Developer and UI/UX enthusiast with a Diploma in Application Software Engineering from Telkom University. I bring ideas to life using code and design — crafting digital experiences that are both functional and visually engaging.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num"><span class="counter" data-target="4" data-suffix="+">0+</span></div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"><span class="counter" data-target="1" data-suffix="yr">0yr</span></div>
+              <div class="stat-label">Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"><span class="counter" data-target="347" data-suffix="">0</span><span style="font-family:var(--font-display);font-weight:800;font-size:1.8rem">/400</span></div>
+              <div class="stat-label">GPA Score</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <div class="hero-img-bg"></div>
+            <img src="assets/img/profile-img.jpg" alt="Rihansen Ulihdo Purba" class="hero-profile-img" />
+            <div class="hero-float-card">
+              <div class="float-icon teal"><i class="fa-brands fa-figma"></i></div>
+              <div><div class="float-label">Design Tool</div><div class="float-value">Figma & Adobe</div></div>
+            </div>
+            <div class="hero-float-card">
+              <div class="float-icon coral"><i class="fa-brands fa-react"></i></div>
+              <div><div class="float-label">Framework</div><div class="float-value">React.js</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="fade-up">
+          <div class="about-label-stack">
+            <span class="section-tag">// about me</span>
+            <h2 class="about-big-label">I design.<br/><span class="highlight-coral">I build.</span><br/>I create.</h2>
+          </div>
+          <p class="about-text">I'm Rihansen — a passionate Frontend Developer and UI/UX enthusiast from Indonesia. With a strong foundation in Application Software Engineering from Telkom University, I combine creativity and technical skills to craft digital experiences that truly stand out.</p>
+          <p class="about-text">From building responsive web interfaces and WordPress plugins to managing social media identities and designing compelling visual content — I love doing it all. I believe great design and clean code go hand in hand.</p>
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <div class="about-info-label">Location</div>
+              <div class="about-info-value"><i class="fa-solid fa-location-dot"></i> Indonesia</div>
+            </div>
+            <div class="about-info-item">
+              <div class="about-info-label">Status</div>
+              <div class="about-info-value"><i class="fa-solid fa-circle-check"></i> Open to Work</div>
+            </div>
+            <div class="about-info-item">
+              <div class="about-info-label">Languages</div>
+              <div class="about-info-value"><i class="fa-solid fa-language"></i> ID / EN</div>
+            </div>
+            <div class="about-info-item">
+              <div class="about-info-label">Focus</div>
+              <div class="about-info-value"><i class="fa-solid fa-code"></i> Frontend & UI/UX</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up">
+          <span class="section-tag">// education</span>
+          <div class="edu-card" style="margin-top:12px;">
+            <span class="edu-badge">2022 — 2025</span>
+            <div class="edu-school">Telkom University</div>
+            <div class="edu-degree">Diploma in Application Software Engineering</div>
+            <div class="edu-period"><i class="fa-solid fa-location-dot"></i> Bandung, Indonesia</div>
+            <div class="edu-gpa">
+              <div class="gpa-bar-wrap"><div class="gpa-bar"></div></div>
+              <div class="gpa-num">3.47</div>
+            </div>
+          </div>
+          <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
+            <div class="achievement-card fade-up">
+              <i class="fa-solid fa-trophy achievement-icon"></i>
+              <div>
+                <div class="achievement-title">Semifinalist — I/O Web Dev Festival</div>
+                <div class="achievement-sub">Tarumanagara University · May 2024</div>
+              </div>
+            </div>
+            <div class="achievement-card fade-up">
+              <i class="fa-solid fa-medal achievement-icon"></i>
+              <div>
+                <div class="achievement-title">Indonesian Vocational Olympics OLIVIA</div>
+                <div class="achievement-sub">Sebelas Maret University · Nov 2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="skills-header fade-up">
+        <span class="section-tag">// skills & tools</span>
+        <h2 class="section-title">What I <span class="highlight-coral">Work With</span></h2>
+        <p>A toolkit built through hands-on experience — from designing interfaces to shipping code.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="skill-card-title">Frontend Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React.js</span><span class="skill-tag">Bootstrap</span><span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="skill-card-title">Design & Prototyping</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span><span class="skill-tag">Canva</span><span class="skill-tag">Adobe Illustrator</span><span class="skill-tag">Adobe Photoshop</span><span class="skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <div class="skill-card-title">Dev Tools & CMS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span><span class="skill-tag">WordPress</span><span class="skill-tag">PHP</span><span class="skill-tag">MySQL</span><span class="skill-tag">Plugin Dev</span>
+          </div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="skill-card-title">Data & Operations</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Google Sheets</span><span class="skill-tag">Advanced Formulas</span><span class="skill-tag">Automation</span><span class="skill-tag">Data Processing</span><span class="skill-tag">Android Studio</span>
+          </div>
+        </div>
+      </div>
+      <div class="soft-skills-section fade-up">
+        <div class="soft-skills-label">Soft <span>Skills</span></div>
+        <div class="soft-tags">
+          <span class="soft-tag"><i class="fa-solid fa-comments"></i> Effective Communication</span>
+          <span class="soft-tag"><i class="fa-solid fa-people-group"></i> Team Collaboration</span>
+          <span class="soft-tag"><i class="fa-solid fa-lightbulb"></i> Problem-Solving</span>
+          <span class="soft-tag"><i class="fa-solid fa-heart"></i> User Empathy</span>
+          <span class="soft-tag"><i class="fa-solid fa-brain"></i> Critical Thinking</span>
+          <span class="soft-tag"><i class="fa-solid fa-clock"></i> Time Management</span>
+          <span class="soft-tag"><i class="fa-solid fa-rotate"></i> Adaptability</span>
+          <span class="soft-tag"><i class="fa-solid fa-magnifying-glass"></i> Attention to Detail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="experience-inner">
+        <div class="experience-sidebar fade-up">
+          <div class="exp-sidebar-label">// work experience</div>
+          <h2 class="exp-sidebar-title">Where I've <span class="highlight-coral">Worked</span></h2>
+          <p class="exp-sidebar-desc">Hands-on experience across frontend development, data management, and creative operations.</p>
+        </div>
+        <div class="exp-cards">
+          <div class="exp-card fade-up">
+            <div class="exp-card-accent"></div>
+            <div class="exp-top">
+              <div class="exp-company">BBPVP Bekasi</div>
+              <span class="exp-period"><i class="fa-regular fa-calendar"></i> Nov 2025 — Mei 2026</span>
+            </div>
+            <div class="exp-role"><i class="fa-solid fa-briefcase"></i> Intern — Data & Information</div>
+            <div class="exp-location"><i class="fa-solid fa-location-dot"></i> Bekasi, Indonesia</div>
+            <ul class="exp-bullets">
+              <li class="exp-bullet">Managed and processed employee data including attendance, WFA, leave, and SKP records using Google Sheets.</li>
+              <li class="exp-bullet">Developed and improved spreadsheet systems for tukin calculation, attendance delay, and timestamp automation.</li>
+              <li class="exp-bullet">Created and updated dashboard data and website content (Satu Data BBPVP).</li>
+              <li class="exp-bullet">Designed visual content and produced animations for training programs.</li>
+              <li class="exp-bullet">Built structured survey systems for service evaluation and organized digital archives.</li>
+            </ul>
+          </div>
+          <div class="exp-card fade-up">
+            <div class="exp-card-accent"></div>
+            <div class="exp-top">
+              <div class="exp-company">Directorate of IT Center</div>
+              <span class="exp-period"><i class="fa-regular fa-calendar"></i> Jul 2024 — Jun 2025</span>
+            </div>
+            <div class="exp-role"><i class="fa-solid fa-briefcase"></i> Intern — Frontend Developer</div>
+            <div class="exp-location"><i class="fa-solid fa-location-dot"></i> Telkom University, Bandung</div>
+            <ul class="exp-bullets">
+              <li class="exp-bullet">Developed and maintained responsive web interfaces for internal campus systems using React.js, HTML, CSS, and JavaScript.</li>
+              <li class="exp-bullet">Created plugins to enhance internal system functionality, streamlining campus operational processes.</li>
+              <li class="exp-bullet">Collaborated with backend teams to integrate APIs and ensure cross-device compatibility.</li>
+              <li class="exp-bullet">Managed digital documentation and supported internal system administration.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIELD ASSIGNMENTS -->
+  <section id="field-assignments">
+    <div class="container">
+      <div class="field-header fade-up">
+        <span class="section-tag">// bbpvp bekasi</span>
+        <h2 class="section-title">Field <span class="highlight-teal">Assignments</span></h2>
+        <p class="field-desc">A visual log of my internship at BBPVP Bekasi — documentation, events, and day-to-day work captured on the ground.</p>
+      </div>
+
+      <div class="field-slider-wrap fade-up">
+        <button class="field-arrow field-arrow-prev" id="fieldPrev" aria-label="Previous">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="field-arrow field-arrow-next" id="fieldNext" aria-label="Next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="field-track-outer">
+          <div class="field-track" id="fieldTrack">
+
+            <div class="field-card">
+              <div class="field-img-wrap">
+                <img src="assets/img/field/field-1.jpeg" alt="Field photo 1" loading="lazy" />
+              </div>
+              <div class="field-card-body">
+                <p class="field-caption">Coordinating training event materials and room setup for participants</p>
+                <span class="field-date"><i class="fa-regular fa-calendar"></i> November 2024</span>
+              </div>
+            </div>
+
+            <div class="field-card">
+              <div class="field-img-wrap">
+                <img src="assets/img/field/field-2.jpeg" alt="Field photo 2" loading="lazy" />
+              </div>
+              <div class="field-card-body">
+                <p class="field-caption">Working on visual identity materials for the internal communication campaign</p>
+                <span class="field-date"><i class="fa-regular fa-calendar"></i> December 2024</span>
+              </div>
+            </div>
+
+            <div class="field-card">
+              <div class="field-img-wrap">
+                <img src="assets/img/field/field-3.jpeg" alt="Field photo 3" loading="lazy" />
+              </div>
+              <div class="field-card-body">
+                <p class="field-caption">Attending the KBSU Day program — documentation and on-site support</p>
+                <span class="field-date"><i class="fa-regular fa-calendar"></i> January 2025</span>
+              </div>
+            </div>
+
+            <div class="field-card">
+              <div class="field-img-wrap">
+                <img src="assets/img/field/field-4.jpeg" alt="Field photo 4" loading="lazy" />
+              </div>
+              <div class="field-card-body">
+                <p class="field-caption">ONNOSU 2025 event — managed live documentation and post-event reporting</p>
+                <span class="field-date"><i class="fa-regular fa-calendar"></i> February 2025</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="field-progress-wrap">
+          <div class="field-progress-bar" id="fieldProgress"></div>
+        </div>
+
+        <div class="field-counter" id="fieldCounter">1 / 8</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div class="fade-up">
+          <span class="section-tag">// project portfolio</span>
+          <h2 class="section-title">Things I've <span class="highlight-teal">Built</span></h2>
+        </div>
+        <div class="projects-count fade-up">04</div>
+      </div>
+      <div class="projects-grid">
+        <a class="project-card featured fade-up" href="https://github.com/rihansen11" target="_blank" rel="noopener">
+          <div class="project-img-wrap">
+            <img src="assets/img/project/wisata-kotabaru.jpg" alt="Wisata Kotabaru" loading="lazy" />
+            <div class="project-img-overlay"><span class="project-view-btn"><i class="fa-brands fa-github"></i> View on GitHub</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fa-solid fa-globe"></i> Web Development</span>
+              <div class="project-tools"><span class="project-tool-tag">HTML</span><span class="project-tool-tag">CSS</span></div>
+            </div>
+            <h3 class="project-title">Wisata Kotabaru</h3>
+            <p class="project-desc">A tourism promotion website for Kotabaru, South Kalimantan. Built a fully responsive interface with beautiful visuals and comprehensive travel information to help visitors plan their trips.</p>
+          </div>
+        </a>
+        <a class="project-card fade-up" href="https://github.com/rihansen11" target="_blank" rel="noopener">
+          <div class="project-img-wrap">
+            <img src="assets/img/project/sipaling-shop.jpg" alt="Sipaling Shop" loading="lazy" />
+            <div class="project-img-overlay"><span class="project-view-btn"><i class="fa-brands fa-github"></i> View on GitHub</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fa-solid fa-cart-shopping"></i> E-commerce UI</span>
+              <div class="project-tools"><span class="project-tool-tag">HTML</span><span class="project-tool-tag">CSS</span></div>
+            </div>
+            <h3 class="project-title">Sipaling Shop</h3>
+            <p class="project-desc">A dynamic e-commerce website for second-hand goods. Features product categories, search, banners, and an intuitive navigation system with a seamless mobile-first experience.</p>
+          </div>
+        </a>
+        <a class="project-card fade-up" href="https://github.com/rihansen11" target="_blank" rel="noopener">
+          <div class="project-img-wrap">
+            <img src="assets/img/project/simply-laundry.jpg" alt="Simply Laundry" loading="lazy" />
+            <div class="project-img-overlay"><span class="project-view-btn"><i class="fa-brands fa-github"></i> View on GitHub</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fa-brands fa-android"></i> Android App</span>
+              <div class="project-tools"><span class="project-tool-tag">Java</span><span class="project-tool-tag">XML</span></div>
+            </div>
+            <h3 class="project-title">Simply Laundry</h3>
+            <p class="project-desc">An Android mobile app for calculating laundry costs. Users input weight and choose a service type — Regular, Express, or Fast — to get the final price instantly.</p>
+          </div>
+        </a>
+        <a class="project-card fade-up" href="https://wordpress.org/plugins/network-site-details/" target="_blank" rel="noopener">
+          <div class="project-img-wrap">
+            <img src="assets/img/project/network-site-details.jpg" alt="Network Site Details" loading="lazy" />
+            <div class="project-img-overlay"><span class="project-view-btn"><i class="fa-brands fa-wordpress"></i> View Plugin</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><i class="fa-brands fa-wordpress"></i> WordPress Plugin</span>
+              <div class="project-tools"><span class="project-tool-tag">PHP</span><span class="project-tool-tag">MySQL</span></div>
+            </div>
+            <h3 class="project-title">Network Site Details</h3>
+            <p class="project-desc">A WordPress Multisite plugin on the official Plugin Directory. Allows network admins to monitor detailed subsite information directly from the network dashboard.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN WORK -->
+  <section id="design-work">
+    <div class="container">
+      <div class="design-header fade-up">
+        <span class="section-tag">// creative work</span>
+        <h2 class="section-title">Design &amp; <span class="highlight-yellow">Creative</span></h2>
+      </div>
+      <div class="design-tabs fade-up">
+        <button class="design-tab active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Work</button>
+        <button class="design-tab" data-filter="poster"><i class="fa-solid fa-image"></i> Poster Design</button>
+        <button class="design-tab" data-filter="social"><i class="fa-solid fa-hashtag"></i> Social Media</button>
+        <button class="design-tab" data-filter="branding"><i class="fa-solid fa-star"></i> Visual / Branding</button>
+      </div>
+      <div class="design-grid" id="design-grid">
+        <div class="design-item" data-category="poster" data-caption="Event Poster — FESTRA Sumatera">
+          <img src="assets/img/design/festra-poster.jpg" alt="FESTRA Poster" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Event Poster — FESTRA Sumatera</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="poster" data-caption="Poster — KBSU Day">
+          <img src="assets/img/design/kbsu-day.jpg" alt="KBSU Day" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Poster — KBSU Day</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="poster" data-caption="Poster — Fun Match Futsal">
+          <img src="assets/img/design/fun-match-futsal.jpg" alt="Fun Match" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Poster — Fun Match Futsal</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="poster" data-caption="Poster — Open Registration">
+          <img src="assets/img/design/open-registration.jpg" alt="Open Reg" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Poster — Open Registration</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="social" data-caption="Social Media — KBSU Telkom">
+          <img src="assets/img/design/kbsu-social.jpg" alt="KBSU Social" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Social Media — KBSU Telkom</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="social" data-caption="Content — ONNOSU 2025">
+          <img src="assets/img/design/onnosu-2025.jpg" alt="ONNOSU" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Content — ONNOSU 2025</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="branding" data-caption="Visual Branding — Campaign Identity">
+          <img src="assets/img/design/campaign-identity.jpg" alt="Branding" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Visual Branding — Campaign Identity</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+        <div class="design-item" data-category="branding" data-caption="Visual Branding — Publication Design">
+          <img src="assets/img/design/publication.jpg" alt="Publication" loading="lazy" />
+          <div class="design-overlay">
+            <span class="design-caption">Visual Branding — Publication Design</span>
+            <span class="design-zoom"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+          </div>
+        </div>
+      </div>
+      <p class="design-note fade-up"><i class="fa-solid fa-circle-info"></i> Placeholder images shown — replace with actual design work from the portfolio PDF</p>
+    </div>
+  </section>
+
+  <!-- VIDEO SHOWCASE -->
+  <section id="videos">
+    <div class="container">
+      <div class="videos-header fade-up">
+        <span class="section-tag">// video showcase</span>
+        <h2 class="section-title">Work in <span class="highlight-purple">Motion</span></h2>
+        <p class="videos-desc">Behind-the-scenes, project demos, and creative process videos.</p>
+      </div>
+      <div class="videos-grid">
+
+        <div class="video-card featured-video fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-1.jpg">
+              <source src="assets/video/video-1.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-1.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-film"></i> Project Demo</span>
+            <h3 class="video-title">Project Showcase — Wisata Kotabaru</h3>
+            <p class="video-desc">A walkthrough of the tourist website — design decisions, responsive layout, and final result.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-2.jpg">
+              <source src="assets/video/video-2.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-2.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-palette"></i> Design Process</span>
+            <h3 class="video-title">UI/UX Design Timelapse</h3>
+            <p class="video-desc">Watch the full design process from wireframe to final Figma prototype.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-3.jpg">
+              <source src="assets/video/video-3.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-3.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-brands fa-wordpress"></i> Plugin Demo</span>
+            <h3 class="video-title">Network Site Details — Plugin Demo</h3>
+            <p class="video-desc">A quick demo of the WordPress plugin on a multisite network dashboard.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-4.jpg">
+              <source src="assets/video/video-4.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-4.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-mobile-screen"></i> App Demo</span>
+            <h3 class="video-title">Simply Laundry — App Walkthrough</h3>
+            <p class="video-desc">Demo of the Android laundry calculator — input flow, service selection, and price output.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-5.jpg">
+              <source src="assets/video/video-5.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-5.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-clapperboard"></i> Creative</span>
+            <h3 class="video-title">Behind the Scenes</h3>
+            <p class="video-desc">A look at the creative workflow — from initial concepts to final published designs.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-6.jpg">
+              <source src="assets/video/video-6.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-6.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Motion</span>
+            <h3 class="video-title">Animation & Motion Design</h3>
+            <p class="video-desc">Visual animations and motion graphics produced for training programs at BBPVP Bekasi.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-7.jpg">
+              <source src="assets/video/video-7.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-6.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Motion</span>
+            <h3 class="video-title">Animation & Motion Design</h3>
+            <p class="video-desc">Visual animations and motion graphics produced for training programs at BBPVP Bekasi.</p>
+          </div>
+        </div>
+
+        <div class="video-card fade-up">
+          <div class="video-wrap">
+            <video controls poster="assets/img/poster/video-8.jpg">
+              <source src="assets/video/video-8.mp4" type="video/mp4" />
+            </video>
+            <div class="video-placeholder"><i class="fa-solid fa-circle-play"></i><span>video-6.mp4</span></div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Motion</span>
+            <h3 class="video-title">Animation & Motion Design</h3>
+            <p class="video-desc">Visual animations and motion graphics produced for training programs at BBPVP Bekasi.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="fade-up">
+          <span class="section-tag">// let's connect</span>
+          <h2 class="section-title">Got a <span class="highlight-coral">Project</span> in Mind?</h2>
+          <p class="contact-intro">I'm currently open to new opportunities — whether it's a full-time role, internship, or freelance project. Let's create something great together!</p>
+          <div class="contact-links">
+            <a href="mailto:rihansen.ulihdo11@gmail.com" class="contact-link-item">
+              <div class="contact-link-icon coral"><i class="fa-solid fa-envelope"></i></div>
+              <div><div class="contact-link-label">Email</div><div class="contact-link-value">rihansen.ulihdo11@gmail.com</div></div>
+            </a>
+            <a href="https://www.linkedin.com/in/rihansen-purba" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon blue"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div><div class="contact-link-label">LinkedIn</div><div class="contact-link-value">linkedin.com/in/rihansen-purba</div></div>
+            </a>
+            <a href="https://github.com/rihansen11" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon ink"><i class="fa-brands fa-github"></i></div>
+              <div><div class="contact-link-label">GitHub</div><div class="contact-link-value">github.com/rihansen11</div></div>
+            </a>
+            <a href="https://instagram.com/rihansen_" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon purple"><i class="fa-brands fa-instagram"></i></div>
+              <div><div class="contact-link-label">Instagram</div><div class="contact-link-value">@rihansen_</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-up">
+          <div class="form-title">Send a Message</div>
+          <div class="form-subtitle">I'll get back to you within 1–2 business days.</div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Project Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">R<span>.</span>Purba</a>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#design-work">Design</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="https://github.com/rihansen11" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rihansen-purba" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/rihansen_" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Rihansen Ulihdo Purba. All rights reserved.</p>
+        <p class="footer-made">Made with <i class="fa-solid fa-heart" style="color:var(--accent-coral)"></i> &amp; clean code</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
