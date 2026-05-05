@@ -334,16 +334,20 @@
    /* Hero visual side */
    .hero-visual {
      position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
    }
    .hero-img-wrap {
      position: relative;
-     display: inline-block;
+     width: 400px;
+     height: 460px;
    }
    .hero-img-bg {
-     width: 420px; height: 480px;
+     width: 100%; height: 100%;
      border-radius: 40% 60% 60% 40% / 50% 50% 50% 50%;
      background: linear-gradient(135deg, var(--accent-yellow) 0%, var(--accent-coral) 100%);
-     position: absolute; top: -20px; left: -20px;
+     position: absolute; top: 0; left: 0;
      animation: morphShape 10s ease-in-out infinite;
    }
    @keyframes morphShape {
@@ -352,11 +356,16 @@
      50% { border-radius: 50% 50% 60% 40% / 60% 40% 60% 40%; }
      75% { border-radius: 40% 60% 50% 50% / 40% 60% 40% 60%; }
    }
-   .hero-img {
-     width: 380px; height: 450px;
+   .hero-img,
+   .hero-profile-img {
+     width: 360px; height: 420px;
      object-fit: cover;
+     object-position: top center;
      border-radius: 36px;
-     position: relative; z-index: 2;
+     position: absolute;
+     top: 50%; left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
      display: block;
    }
    .hero-img-placeholder {
@@ -390,8 +399,8 @@
      display: flex; align-items: center; gap: 10px;
      animation: floatCard 4s ease-in-out infinite;
    }
-   .hero-float-card:nth-child(3) { bottom: 40px; left: -40px; animation-delay: 1s; }
-   .hero-float-card:nth-child(4) { top: 20px; right: -20px; animation-delay: 2.5s; }
+   .hero-float-card:nth-child(3) { bottom: 30px; left: -50px; animation-delay: 1s; }
+   .hero-float-card:nth-child(4) { top: 30px; right: -50px; animation-delay: 2.5s; }
    @keyframes floatCard { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
    .float-icon {
      width: 36px; height: 36px; border-radius: var(--radius-sm);
